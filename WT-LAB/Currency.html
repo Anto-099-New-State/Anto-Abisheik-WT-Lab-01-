@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <src view-port="device-width"/> 
+    </head>
+    <body>
+        <h1>Trade-Currency</h1>
+        <form name="curr-form" onsubmit="return validatecurrForm()">
+            TAKE-PROIFT: <input name="take-profit" type="int" >
+            STOP-LOSS  : <input name="stop-loss" type="int" >
+            <input type="submit" />
+
+        </form>
+        <script>
+            function validatecurrForm() {
+                let x = document.forms["curr-form"]["take-profit"].value;
+                alert("New Has Been Opened..");
+                return true;
+             }
+        </script>
+    </body>
+</html>

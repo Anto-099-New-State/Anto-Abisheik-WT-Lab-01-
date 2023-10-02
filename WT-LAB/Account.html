@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <src view-port="device-width"/> 
+    </head>
+    <body>
+        <form name="user-form" onsubmit="return validateForm()">
+            USER: <input name="usr-nam" type="text" >
+            PIN : <input name="usr-pass" type="password" >
+            <input type="submit" />
+
+        </form>
+        <script>
+            function validateForm() {
+                let x = document.forms["f1"]["usr-nam"].value;
+                if (x == "") {
+                alert("Name must be filled out");
+                return false;
+                }
+             }
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <src view-port="device-width"/> 
+    </head>
+    <body>
+        <h1>Trade-History</h1>
+        <h3>Past trades</h3>
+        <form name="curr-form" onsubmit="return validatecurrForm()">
+            Enter your currency val: <input type="int" name="pf-trade"/>
+            
+            <input type="submit" />
+
+        </form>
+        <script>
+            function validatecurrForm() {
+                let x = document.forms["curr-form"]["pf-trade"].value;
+                if(x<0){
+                     alert("||| Sorry You Have Lost The Trade ||||");
+                }
+                if(x>0){
+                    alert(" ||||Congrats it's aProfitable Trade||||")
+                }
+                return true;
+             }
+        </script>
+    </body
